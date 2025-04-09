@@ -1,0 +1,1 @@
+Very simple chat server. Where a person can pick to be a server or a client. Where the server is the relay and the clients are talking to each other through the server.
