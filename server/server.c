@@ -15,8 +15,14 @@ int setupServer(Server *s){
 }
 
 int luachServer(Server *s){
+  
   //listen
+  listen(s->socket, NULL);
+
   //accept
+  int newsocket = accept(s->socket,(struct sockaddr *)& s->address, (socklen_t *) sizeof(s->address) < 0);
+
   //send/respond
+  
   //close
 }

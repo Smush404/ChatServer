@@ -9,6 +9,7 @@ typedef struct Server{
 struct sockaddr server_address;
 int type;
 int domain;
+struct sockaddr_in address;
 int protocal;
 int socket;
 char buffer[100];
