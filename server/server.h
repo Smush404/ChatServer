@@ -5,6 +5,7 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <pthread.h>
+
 typedef struct Server{
 struct sockaddr server_address;
 int type;

@@ -14,7 +14,7 @@ int setupServer(Server *s){
   }
 }
 
-int luachServer(Server *s){
+int lauchServer(Server *s){
   
   //listen
   listen(s->socket, NULL);
@@ -22,7 +22,7 @@ int luachServer(Server *s){
   //accept
   int newsocket = accept(s->socket,(struct sockaddr *)& s->address, (socklen_t *) sizeof(s->address) < 0);
 
-  //send/respond
-  
+  //reroute sends  to otehr cleints 
+  // inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr)?? convert from text to binary addr
   //close
 }
